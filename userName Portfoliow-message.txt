@@ -1,0 +1,21 @@
+userName: Portfoliow-message
+
+Password: OSsfpuoCIj3sHoG1
+
+mongodb+srv://<db_username>:<db_password>@cluster0.c2yujfr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0  
+
+
+   #chat-gpt#
+Check MongoDB data
+
+Go to MongoDB Atlas
+ → Cluster → Database → Browse Collections → messages
+You’ll see documents like:
+{
+  "_id": "652a1a3f2a34a9...",
+  "name": "Tahsin",
+  "email": "tahsin@example.com",
+  "message": "Hi there!",
+  "createdAt": "2025-10-17T20:59:00Z",
+  "updatedAt": "2025-10-17T20:59:00Z"
+}
