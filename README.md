@@ -1,4 +1,20 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+# 🎯DEV-PROTFOLIOW
+
+
+
+
+## 🛠️ Technology Stack
+
+- **Next.js & React** → Frontend framework  
+- **TypeScript** → Type safety and better code structure  
+- **Tailwind CSS** → Styling & responsive UI  
+- **Node.js + Express** → Backend API  
+- **MongoDB** → Database for storing data  
+- **Git** → Version control  
+- **Vercel** → Deployment platform  
+- **VS Code** → Development IDE
+
 
 ## Getting Started
 
