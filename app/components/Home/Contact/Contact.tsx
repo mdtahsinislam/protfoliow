@@ -229,6 +229,9 @@
 import React, { useState } from 'react';
 import { BiLogoGmail } from 'react-icons/bi';
 import { FaGithub, FaLinkedin, FaEnvelope, FaFacebook } from 'react-icons/fa';
+import { IoPhonePortraitOutline } from 'react-icons/io5';
+import { SlLocationPin } from 'react-icons/sl';
+import { TbPhoneCall } from 'react-icons/tb';
 
 const Contact = () => {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
@@ -288,14 +291,36 @@ const Contact = () => {
    <FaFacebook />  {/* Replace with your actual Facebook icon component */}
 </a>
 
-<a
+
+
+          </div>
+<div>
+  {/* <button
+  className="btn mt-3 btn-accent text-xl  flex items-center gap-2 hover:text-cyan-400"
+  onClick={() => window.location.href = "mailto:mdtahsinislam334@gmail.com"}
+>
+  <BiLogoGmail />
+  mdtahsinislam334@gmail.com
+</button> */}
+{/* <a
   href="mailto:mdtahsinislam334@gmail.com"
   className="text-3xl hover:text-cyan-400"
 >
- <BiLogoGmail /> {/* Replace with your actual Gmail icon component */}
+ <BiLogoGmail />mdtahsinislam334@gmail.com 
+</a>  */}
+<a
+  href="mailto:mdtahsinislam334@gmail.com"
+  className="text-xl flex items-center gap-2 mt-1.5 hover:text-cyan-400"
+>
+  <BiLogoGmail />
+  mdtahsinislam334@gmail.com
 </a>
 
-          </div>
+<p className='flex mt-3 text-xl hover:text-cyan-400'><TbPhoneCall className='text-xl hover:text-cyan-400' />+8801610245487</p>
+<p className='flex text-xl mt-3 hover:text-cyan-400'><SlLocationPin /> <span className='ml-1.5'>Chattogram , Bangladesh</span></p>
+ 
+</div>
+
         </div>
 
         {/* Right form */}
