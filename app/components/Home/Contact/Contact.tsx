@@ -386,7 +386,33 @@ import StylishEarth from '../../StylishEarth';
 import { motion } from 'framer-motion';
 
 // ✅ Simple animation variant (same as sliderIn)
-const sliderIn = (direction: 'left' | 'right' | 'up' | 'down', type: string, delay: number, duration: number) => {
+// const sliderIn = (direction: 'left' | 'right' | 'up' | 'down', type: string, delay: number, duration: number) => {
+//   return {
+//     hidden: {
+//       x: direction === 'left' ? -100 : direction === 'right' ? 100 : 0,
+//       y: direction === 'up' ? 100 : direction === 'down' ? -100 : 0,
+//       opacity: 0,
+//     },
+//     show: {
+//       x: 0,
+//       y: 0,
+//       opacity: 1,
+//       transition: { type, delay, duration, ease: 'easeOut' },
+//     },
+//   };
+// };
+
+//new
+import { Variants, Transition } from 'framer-motion';
+
+const sliderIn = (
+  direction: 'left' | 'right' | 'up' | 'down', 
+  type: 'tween' | 'spring' | 'inertia', 
+  delay: number, 
+  duration: number
+): Variants => {
+  const transition: Transition = { type, delay, duration, ease: 'easeOut' };
+
   return {
     hidden: {
       x: direction === 'left' ? -100 : direction === 'right' ? 100 : 0,
@@ -397,10 +423,12 @@ const sliderIn = (direction: 'left' | 'right' | 'up' | 'down', type: string, del
       x: 0,
       y: 0,
       opacity: 1,
-      transition: { type, delay, duration, ease: 'easeOut' },
+      transition,
     },
   };
 };
+
+
 
 const Contact = () => {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
@@ -453,6 +481,8 @@ const Contact = () => {
           >
             <StylishEarth />
           </motion.div>
+
+          
 
           <h1 className="text-4xl font-bold text-cyan-400 mb-6">Contact Me</h1>
           <p className="text-gray-300">

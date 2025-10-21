@@ -257,6 +257,7 @@
 
 // export default StylishEarth;
 
+
 'use client';
 import React, { useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
@@ -456,12 +457,17 @@ function DynamicOrbitalSystem() {
       {/* Particle Field */}
       <points ref={particleFieldRef}>
         <bufferGeometry>
-          <bufferAttribute
+          {/* <bufferAttribute
             attach="attributes-position"
             count={particleCount}
             array={particles}
             itemSize={3}
-          />
+          /> */}
+          <bufferAttribute
+  attach="attributes-position"
+  args={[particles, 3]}
+/>
+
         </bufferGeometry>
         <pointsMaterial
           color="#ffffff"
@@ -511,7 +517,7 @@ function EnergyBeams() {
 const GloriousEarth = () => {
   return (
     <div className="flex justify-center items-center  bg-gradient-to-b from-black via-gray-900 to-black  shadow-lg shadow-cyan-900/40 rounded-2xl p-6">
-      <Canvas style={{ width: 480, height: 350   }}>
+      <Canvas style={{ width: 480, height: 350 }}>
         <color attach="background" args={['#000011']} />
         
         {/* Enhanced Lighting */}
