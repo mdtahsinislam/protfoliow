@@ -225,13 +225,182 @@
 // //mongodb+srv://<db_username>:<db_password>@cluster0.c2yujfr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
 
 
+
+//****My code */
+
+// 'use client';
+// import React, { useState } from 'react';
+// import { BiLogoGmail } from 'react-icons/bi';
+// import { FaGithub, FaLinkedin, FaEnvelope, FaFacebook } from 'react-icons/fa';
+// import { IoPhonePortraitOutline } from 'react-icons/io5';
+// import { SlLocationPin } from 'react-icons/sl';
+// import { TbPhoneCall } from 'react-icons/tb';
+// import StylishEarth from '../../StylishEarth';
+// import { motion } from 'framer-motion';
+// //import { sliderIn } from '../../utils/motion';
+
+// const Contact = () => {
+//   const [form, setForm] = useState({ name: '', email: '', message: '' });
+//   const [loading, setLoading] = useState(false);
+//   const [success, setSuccess] = useState('');
+
+//   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+//     setForm({ ...form, [e.target.name]: e.target.value });
+//   };
+
+//   const handleSubmit = async (e: React.FormEvent) => {
+//     e.preventDefault();
+//     setLoading(true);
+//     setSuccess('');
+
+//     try {
+//       const res = await fetch('/api/contact', {
+//         method: 'POST',
+//         headers: { 'Content-Type': 'application/json' },
+//         body: JSON.stringify(form),
+//       });
+
+//       const data = await res.json();
+
+//       if (data.success) {
+//         setSuccess('✅ Message sent successfully!');
+//         setForm({ name: '', email: '', message: '' });
+//       } else {
+//         setSuccess('❌ Failed to send message.');
+//       }
+//     } catch (error) {
+//       console.error(error);
+//       setSuccess('⚠️ Something went wrong.');
+//     } finally {
+//       setLoading(false);
+//     }
+//   };
+
+//   return (
+//     <div className="pt-16 pb-16 bg-gray-900 text-white">
+//       <div className="w-[90%] md:w-[80%] lg:w-[70%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+//         {/* Left text (same as before) */}
+//         <div>
+          
+//           <motion.div
+//   variants={sliderIn('left', 'tween', 0.2, 1)}
+//   initial="hidden"
+//   animate="show"
+// >
+//   <StylishEarth />
+// </motion.div>
+
+
+//           <h1 className="text-4xl font-bold text-cyan-400 mb-6">Contact Me</h1>
+//           <p className="text-gray-300">
+//             Feel free to reach out for collaborations or just to say hi!
+//           </p>
+//           <div className="flex gap-6 mt-6">
+//             <a href="https://github.com/mdtahsinislam" target="_blank" className="text-3xl hover:text-cyan-400"><FaGithub /></a>
+//             <a href="https://linkedin.com/in/mdtahsinislam" target="_blank" className="text-3xl hover:text-cyan-400"><FaLinkedin /></a>
+//            <a
+//   href="https://www.facebook.com/mdtahsin.tahsin.1481"
+//   target="_blank"
+//   rel="noopener noreferrer"
+//   className="text-3xl hover:text-cyan-400"
+// >
+//    <FaFacebook />  {/* Replace with your actual Facebook icon component */}
+// </a>
+
+
+
+//           </div>
+// <div>
+  
+// <a
+//   href="mailto:mdtahsinislam334@gmail.com"
+//   className="text-xl flex items-center gap-2 mt-1.5 hover:text-cyan-400"
+// >
+//   <BiLogoGmail />
+//   mdtahsinislam334@gmail.com
+// </a>
+
+// <p className='flex mt-3 text-xl hover:text-cyan-400'><TbPhoneCall className='text-xl hover:text-cyan-400' />+8801610245487</p>
+// <p className='flex text-xl mt-3 hover:text-cyan-400'><SlLocationPin /> <span className='ml-1.5'>Chattogram , Bangladesh</span></p>
+ 
+// </div>
+
+//         </div>
+
+//         {/* Right form */}
+//         <div className="bg-gray-800 rounded-xl p-8">
+//           <form onSubmit={handleSubmit} className="flex flex-col space-y-5">
+//             <input
+//               name="name"
+//               type="text"
+//               placeholder="Your name"
+//               value={form.name}
+//               onChange={handleChange}
+//               required
+//               className="w-full px-4 py-2 rounded-md bg-gray-700 border border-gray-600 focus:border-cyan-400"
+//             />
+//             <input
+//               name="email"
+//               type="email"
+//               placeholder="Your email"
+//               value={form.email}
+//               onChange={handleChange}
+//               required
+//               className="w-full px-4 py-2 rounded-md bg-gray-700 border border-gray-600 focus:border-cyan-400"
+//             />
+//             <textarea
+//               name="message"
+//               placeholder="Your message..."
+//               rows={5}
+//               value={form.message}
+//               onChange={handleChange}
+//               required
+//               className="w-full px-4 py-2 rounded-md bg-gray-700 border border-gray-600 focus:border-cyan-400 resize-none"
+//             />
+//             <button
+//               type="submit"
+//               disabled={loading}
+//               className="bg-cyan-900 text-white font-semibold px-6 py-2 rounded-md hover:bg-green-800 transition-all"
+//             >
+//               {loading ? 'Sending...' : 'Send Message'}
+//             </button>
+//           </form>
+
+//           {success && <p className="mt-4 text-center text-cyan-400">{success}</p>}
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Contact;
+
+
 'use client';
 import React, { useState } from 'react';
 import { BiLogoGmail } from 'react-icons/bi';
-import { FaGithub, FaLinkedin, FaEnvelope, FaFacebook } from 'react-icons/fa';
-import { IoPhonePortraitOutline } from 'react-icons/io5';
+import { FaGithub, FaLinkedin, FaFacebook } from 'react-icons/fa';
 import { SlLocationPin } from 'react-icons/sl';
 import { TbPhoneCall } from 'react-icons/tb';
+import StylishEarth from '../../StylishEarth';
+import { motion } from 'framer-motion';
+
+// ✅ Simple animation variant (same as sliderIn)
+const sliderIn = (direction: 'left' | 'right' | 'up' | 'down', type: string, delay: number, duration: number) => {
+  return {
+    hidden: {
+      x: direction === 'left' ? -100 : direction === 'right' ? 100 : 0,
+      y: direction === 'up' ? 100 : direction === 'down' ? -100 : 0,
+      opacity: 0,
+    },
+    show: {
+      x: 0,
+      y: 0,
+      opacity: 1,
+      transition: { type, delay, duration, ease: 'easeOut' },
+    },
+  };
+};
 
 const Contact = () => {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
@@ -273,57 +442,56 @@ const Contact = () => {
   return (
     <div className="pt-16 pb-16 bg-gray-900 text-white">
       <div className="w-[90%] md:w-[80%] lg:w-[70%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-        {/* Left text (same as before) */}
+        
+        {/* Left Section */}
         <div>
+          {/* 🌍 Animated Earth using motion */}
+          <motion.div
+            variants={sliderIn('left', 'tween', 0.2, 1)}
+            initial="hidden"
+            animate="show"
+          >
+            <StylishEarth />
+          </motion.div>
+
           <h1 className="text-4xl font-bold text-cyan-400 mb-6">Contact Me</h1>
           <p className="text-gray-300">
             Feel free to reach out for collaborations or just to say hi!
           </p>
-          <div className="flex gap-6 mt-6">
+
+          <div className="flex gap-6 mt-6 mb-3">
             <a href="https://github.com/mdtahsinislam" target="_blank" className="text-3xl hover:text-cyan-400"><FaGithub /></a>
             <a href="https://linkedin.com/in/mdtahsinislam" target="_blank" className="text-3xl hover:text-cyan-400"><FaLinkedin /></a>
-           <a
-  href="https://www.facebook.com/mdtahsin.tahsin.1481"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="text-3xl hover:text-cyan-400"
->
-   <FaFacebook />  {/* Replace with your actual Facebook icon component */}
-</a>
-
-
-
+            <a
+              href="https://www.facebook.com/mdtahsin.tahsin.1481"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-3xl hover:text-cyan-400"
+            >
+              <FaFacebook />
+            </a>
           </div>
-<div>
-  {/* <button
-  className="btn mt-3 btn-accent text-xl  flex items-center gap-2 hover:text-cyan-400"
-  onClick={() => window.location.href = "mailto:mdtahsinislam334@gmail.com"}
->
-  <BiLogoGmail />
-  mdtahsinislam334@gmail.com
-</button> */}
-{/* <a
-  href="mailto:mdtahsinislam334@gmail.com"
-  className="text-3xl hover:text-cyan-400"
->
- <BiLogoGmail />mdtahsinislam334@gmail.com 
-</a>  */}
-<a
-  href="mailto:mdtahsinislam334@gmail.com"
-  className="text-xl flex items-center gap-2 mt-1.5 hover:text-cyan-400"
->
-  <BiLogoGmail />
-  mdtahsinislam334@gmail.com
-</a>
 
-<p className='flex mt-3 text-xl hover:text-cyan-400'><TbPhoneCall className='text-xl hover:text-cyan-400' />+8801610245487</p>
-<p className='flex text-xl mt-3 hover:text-cyan-400'><SlLocationPin /> <span className='ml-1.5'>Chattogram , Bangladesh</span></p>
- 
-</div>
+          <div>
+            <a
+              href="mailto:mdtahsinislam334@gmail.com"
+              className="text-xl flex items-center gap-2 mt-1.5 hover:text-cyan-400"
+            >
+              <BiLogoGmail />
+              mdtahsinislam334@gmail.com
+            </a>
 
+            <p className='flex mt-3 text-xl hover:text-cyan-400'>
+              <TbPhoneCall className='text-xl hover:text-cyan-400' /> +8801610245487
+            </p>
+            <p className='flex text-xl mt-3 hover:text-cyan-400'>
+              <SlLocationPin /> 
+              <span className='ml-1.5'>Chattogram, Bangladesh</span>
+            </p>
+          </div>
         </div>
 
-        {/* Right form */}
+        {/* Right Section (Form) */}
         <div className="bg-gray-800 rounded-xl p-8">
           <form onSubmit={handleSubmit} className="flex flex-col space-y-5">
             <input

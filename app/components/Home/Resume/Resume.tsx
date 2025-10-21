@@ -43,7 +43,7 @@
 
 import React from 'react'
 import ResumeCard from './ResumeCard'
-import { FaCodepen, FaReact } from 'react-icons/fa'
+import { FaCodepen, FaGraduationCap, FaPenAlt, FaReact } from 'react-icons/fa'
 import { BsDatabase } from 'react-icons/bs'
 import { BiBadge } from 'react-icons/bi'
 
@@ -85,16 +85,16 @@ const Resume = () => {
 
           <div className='mt-10'>
             <ResumeCard
-              Icon={BiBadge}
+              Icon={FaPenAlt}
               role='Higher Secondary Education'
               date='Satkania Govt. College / 2019 - 2021'
               description='Graduated from Satkania Govt. College in the Science department with strong academic performance.'
             />
             <ResumeCard
-              Icon={FaReact}
+              Icon={FaGraduationCap }
               role='Undergraduate Studies'
               date='BGC Trust University , Bangladesh    /  2023 - 2026'
-              description='Currently pursuing a Bachelor’s degree in Computer Science & Engineering, focusing on full-stack web development and software design.'
+              description='Currently pursuing a B.Sc (Honours) in Computer Science & Engineering, focusing on full-stack web development and software design.'
             />
           </div>
         </div>
