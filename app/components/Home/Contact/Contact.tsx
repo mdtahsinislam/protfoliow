@@ -491,7 +491,7 @@ const Contact = () => {
 
           <div className="flex gap-6 mt-6 mb-3">
             <a href="https://github.com/mdtahsinislam" target="_blank" className="text-3xl hover:text-cyan-400"><FaGithub /></a>
-            <a href="https://linkedin.com/in/mdtahsinislam" target="_blank" className="text-3xl hover:text-cyan-400"><FaLinkedin /></a>
+            <a href="https://www.linkedin.com/in/mdtahsinislamchowdhury/" target="_blank" className="text-3xl hover:text-cyan-400"><FaLinkedin /></a>
             <a
               href="https://www.facebook.com/mdtahsin.tahsin.1481"
               target="_blank"

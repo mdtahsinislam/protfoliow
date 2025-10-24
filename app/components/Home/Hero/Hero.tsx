@@ -19,7 +19,7 @@ import { FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa'
 const Hero = () => {
   return (
     <div className='relative h-screen flex items-center justify-center text-white bg-[#0d0d1f]'>
-      {/* <h1 className='text-5xl font-bold'>Hero Section</h1> */}
+      {/* <h1 className='text-5xl font-bold'>Hero Section</h1>  growing as a Full Stack Developer*/}
 
 
    <ParticlesHero />
@@ -31,9 +31,12 @@ const Hero = () => {
             Hi! I am MD Tahsin Islam Chowdhury - A Passionate <br /> <span className='text-cyan-300 font-bold'>
                 <Typewriter options={{
                     strings:[
-                        'Fronend Developer',
-                        'Backend Developer',
-                        'Web Developer'
+                      'Learner',
+                      'Student of CSE',
+                      'Programmer',
+                        'Web Developer',
+                        'MERN Stack Developer',
+                        'Growing as a Full Stack Developer'
                     ],
                     autoStart:true,
                     loop:true,
@@ -43,24 +46,29 @@ const Hero = () => {
                 }}/>
             </span>
         </h2>
+               {/* view download */}
                <div className='flex gap-3.5 mt-4'>
-                          {/* view */}
-<button className='px-8 py-3.5 text-sm cursor-pointer rounded-lg bg-blue-800 hover:bg-blue-900 transition-all duration-300 text-white flex items-center space-x-2'>
+  {/* View Resume Button */}
+  <a 
+    href="/Resumei.pdf" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className='px-8 py-3.5 text-sm cursor-pointer rounded-lg bg-blue-800 hover:bg-blue-900 transition-all duration-300 text-white flex items-center space-x-2'
+  >
     <AiOutlineEye className="w-5 h-5" />
-        <span>View CV</span>
-</button>
-{/* cv button */}
-<button className='px-8 py-3.5 text-sm cursor-pointer rounded-lg bg-blue-800 hover:bg-blue-900 transition-all duration-300 text-white flex items-center space-x-2'>
+    <span>View Resume</span>
+  </a>
+  
+  {/* Download Resume Button */}
+  <a 
+    href="/Resumei.pdf" 
+    download="Your-Name-Resume.pdf"
+    className='px-8 py-3.5 text-sm cursor-pointer rounded-lg bg-blue-800 hover:bg-blue-900 transition-all duration-300 text-white flex items-center space-x-2'
+  >
     <BiDownload className='w-5 h-5'/>
-    <span>Download CV</span>
-</button>
-
-
-
-
-
-
-               </div>
+    <span>Download Resume</span>
+  </a>
+</div>
 
 
                {/* raf */}
@@ -68,7 +76,7 @@ const Hero = () => {
          
           <div className="flex gap-6 mt-6">
             <a href="https://github.com/mdtahsinislam" target="_blank" className="text-3xl hover:text-cyan-400"><FaGithub /></a>
-            <a href="https://linkedin.com/in/mdtahsinislam" target="_blank" className="text-3xl hover:text-cyan-400"><FaLinkedin /></a>
+            <a href="https://www.linkedin.com/in/mdtahsinislamchowdhury/" target="_blank" className="text-3xl hover:text-cyan-400"><FaLinkedin /></a>
            <a
   href="https://www.facebook.com/mdtahsin.tahsin.1481"
   target="_blank"
