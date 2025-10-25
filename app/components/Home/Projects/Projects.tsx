@@ -712,7 +712,7 @@ const projects: Project[] = [
     frontendRepo: "https://github.com/mdtahsinislam/pet-adoupt-platfrom-client",
     backendRepo: "https://github.com/mdtahsinislam/pet-adoupt-platfrom-serverr",
     liveLink: "https://pet-adoupt-platfrom.web.app",
-    imagePath: "/images/project 1.png",
+    imagePath: "/images/fmiv.png",
   },
   {
     title: "Restaurant Management",
@@ -738,7 +738,7 @@ const projects: Project[] = [
     backendRepo:
       "https://github.com/mdtahsinislam/Resturent_management-server-site",
     liveLink: "https://resturentmanagement-website.web.app/",
-    imagePath: "/images/project 2.png",
+    imagePath: "/images/fmii.png",
   },
   {
     title: "Plant Care Tracker",

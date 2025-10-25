@@ -50,7 +50,7 @@ const Hero = () => {
                <div className='flex gap-3.5 mt-4'>
   {/* View Resume Button */}
   <a 
-    href="/Resumei.pdf" 
+    href="/Md-Tahsin-Islam-Chowdhury-MyRESUME.pdf" 
     target="_blank" 
     rel="noopener noreferrer"
     className='px-8 py-3.5 text-sm cursor-pointer rounded-lg bg-blue-800 hover:bg-blue-900 transition-all duration-300 text-white flex items-center space-x-2'
@@ -61,7 +61,7 @@ const Hero = () => {
   
   {/* Download Resume Button */}
   <a 
-    href="/Resumei.pdf" 
+    href="/Md-Tahsin-Islam-Chowdhury-MyRESUME.pdf" 
     download="Your-Name-Resume.pdf"
     className='px-8 py-3.5 text-sm cursor-pointer rounded-lg bg-blue-800 hover:bg-blue-900 transition-all duration-300 text-white flex items-center space-x-2'
   >
