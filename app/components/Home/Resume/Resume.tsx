@@ -55,24 +55,24 @@ const Resume = () => {
         {/* WORK EXPERIENCE */}
         <div>
           <h1 className='text-3xl sm:text-4xl font-bold text-white'>
-            My Work <span className='text-cyan-500'>Experience</span>
+            My <span className='text-cyan-500'>Experience</span>
           </h1>
 
           <div className='mt-10'>
             <ResumeCard
               Icon={FaCodepen}
               role='Full-Stack Development'
-              description='Building scalable web applications using React, Node.js, and MongoDB, ensuring both frontend and backend integration.'
+              description='Building scalable web applications using Reactjs, Node.js, Expressjs ,  MongoDB,Nextjs , TypeScript ensuring both frontend and backend integration.'
             />
             <ResumeCard
               Icon={FaReact}
               role='Front-End Development'
-              description='Developing responsive, pixel-perfect user interfaces with React, Next.js, and Tailwind CSS for modern web experiences.'
+              description='Developing responsive, pixel-perfect user interfaces with React, Next.js,  Tailwind CSS for modern web experiences.'
             />
             <ResumeCard
               Icon={BsDatabase}
               role='Back-End Development'
-              description='Designing and managing secure RESTful APIs, database schemas, and server-side logic using Express and MongoDB.'
+              description='Designing and managing secure RESTful APIs, database schemas, and server-side logic using Nodejs, Expressjs , and MongoDB.'
             />
           </div>
         </div>
@@ -98,6 +98,9 @@ const Resume = () => {
             />
           </div>
         </div>
+
+
+
       </div>
     </div>
   )
