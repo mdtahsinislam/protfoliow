@@ -5,7 +5,7 @@ const Services = () => {
   return (
     <div className='pt-12 pb-12 '>
         
-        <h1 className='text-center  text-4xl  font-bold text-white'>
+        <h1 className='text-center  text-4xl  font-bold text-cyan-600'>
          About-Me   
     </h1>  
     <div className='w-[90%]  sm:w-[70%] mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 mt-20 items-center'>

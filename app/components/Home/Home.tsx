@@ -37,6 +37,7 @@ function Home() {
   return (
     <div className='overflow-hidden'>
       <section id="home"><Hero /></section>
+      <section id="services"><Services></Services></section>
       <section id="skills"><Skils /></section>
       <section id="education"><Resume /></section>
       <section id="projects"><Projects /></section>
