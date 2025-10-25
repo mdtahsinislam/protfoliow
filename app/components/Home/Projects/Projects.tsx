@@ -694,7 +694,7 @@ const projects: Project[] = [
   {
     title: "PetAdouptPlatform",
     description:
-      "A comprehensive pet adoption platform featuring user authentication, secure payments with Stripe, role-based access control, dynamic pet management, and responsive design.",
+      "A comprehensive full-stack MERN  pet adoption platform featuring user authentication, secure payments with Stripe, role-based access control, dynamic pet management, and responsive design.",
     technologies: [
       { name: "Reactjs" },
       { name: "Nodejs" },
